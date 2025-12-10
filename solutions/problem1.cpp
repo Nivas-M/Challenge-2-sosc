@@ -21,7 +21,6 @@ int main() {
     char d;
     while (dirFile >> d) dirs.push_back(d);
 
-    // Logic: Rotate rows based on R (Right) or L (Left)
     for (size_t i = 0; i < grid.size() && i < dirs.size(); ++i) {
         if (dirs[i] == 'R') {
             char last = grid[i].back();
@@ -33,12 +32,10 @@ int main() {
             grid[i].push_back(first);
         }
     }
-
-    // Logic: Middle row sum
     string middleRow = grid[grid.size() / 2];
     int sum = 0;
     for (char c : middleRow) sum += c;
 
-    cout << "Clue 1: " << sum << endl; // Expected: 385
+    cout << "Clue 1: " << sum << endl;
     return 0;
 }

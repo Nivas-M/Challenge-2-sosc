@@ -18,10 +18,9 @@ int main() {
     int num;
     int doneCount = 0;
     while (inFile >> num) {
-        // Logic: Primes transition directly to DONE.
         if (isPrime(num)) doneCount++;
     }
 
-    cout << "Clue 3: " << doneCount << endl; // Expected: 5
+    cout << "Clue 3: " << doneCount << endl;
     return 0;
 }
