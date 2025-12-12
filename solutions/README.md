@@ -2,26 +2,15 @@
 
 This directory contains the C++ solutions for the SOSC Round 2 Coding Puzzle.
 
-## Files
+## Solutions Overview
+* **Problem 1**: Rotated grid rows. Middle row `OKLMN` sum is **385**.
+* **Problem 2**: String processing. Vowel count in `gigncjueu` is **4**.
+* **Problem 3**: State simulation. 5 Primes reach DONE. Count is **5**.
 
-- `problem1.cpp`: Solves the grid rotation puzzle. Finds Clue 1: **385**.
-- `problem2.cpp`: Solves the string manipulation puzzle. Finds Clue 2: **5**.
-- `problem3.cpp`: Solves the state transition puzzle (primes). Finds Clue 3: **5**.
-- `final_key.txt`: Contains the generated key based on the clues: `181-55555`.
+## Final Key
+Formula: `<Hex(Clue1)>-<Clue2 * Clue3>`
+Key: `181-44444`
 
-## How to Run
-
-Compile the C++ files using a C++ compiler (e.g., g++):
-
-```bash
-g++ problem1.cpp -o problem1
-./problem1
-
-g++ problem2.cpp -o problem2
-./problem2
-
-g++ problem3.cpp -o problem3
-./problem3
-```
-
-Ensure the `inputs/` directory is present in the parent directory (`../inputs/`) relative to these executables.
+## Execution
+Compile with `g++ problemX.cpp -o problemX` and run `./problemX`.
+Ensure `inputs/` folder exists at `../inputs/`.
